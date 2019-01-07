@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>店铺详情</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/reset.js"></script>
+    <script src="js/zepto.min.js"></script>
+</head>
+<style>
+    header {
+        height: 0.96rem;
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        overflow: hidden;
+    }
+
+    .icon-ret {
+        background: url(images/btn_back.png?lv=09b14befba) no-repeat;
+        width: 0.4rem;
+        height: 0.4rem;
+        background-size: 100%;
+        float: left;
+        margin-top: 0.28rem;
+        margin-left: 0.2rem;
+    }
+
+    .hd-title {
+        float: left;
+        font-size: 0.32rem;
+        font-weight: 500;
+        color: rgba(53, 53, 53, 1);
+        margin-top: 0.26rem;
+        margin-left: 2.6rem;
+    }
+
+    .c-title {
+        margin-top: 0.96rem;
+        width: 100%;
+        height: 0.60rem;
+        background: #F5F5F5;
+        padding-left: 0.34rem;
+        align-content: center;
+        line-height: 0.60rem;
+        font-size: 0.26rem;
+        font-family: PingFang-SC-Regular;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+    }
+
+    .c-main {
+        width: 100%;
+        height: auto;
+        background: #ffffff;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .m-title{
+        margin-left: 0.34rem;
+        font-size:0.26rem;
+        line-height: 0.36rem;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(102,102,102,1);
+    }
+    .m-top{
+        margin-top:0.20rem;
+    }
+    .m-txt{
+        color: #F81234;
+    }
+    #pers{
+        width: 6.29rem;
+        height: 8.86rem;
+        margin-left: 0.60rem;
+        margin-top:0.20rem;
+    }
+    .per-btn{
+        width: 2.35rem;
+        height: 0.61rem;
+        margin-left: 4.5rem;
+        margin-top:0.50rem;
+        background: url("images/perbtn.png") no-repeat center;
+        background-size: 100%;
+    }
+</style>
+<body>
+<header class="hd">
+    <span class="icon-ret"></span>
+    <span class="hd-title">店铺信息</span>
+</header>
+<div id="con">
+    <div class="c-title">医疗器械经营备案凭证</div>
+    <div class="c-main">
+        <div class="m-title m-top">根据国家工商总局</div>
+        <div class="m-title">
+            <span class="m-txt">《网络交易管理办法》</span>
+            要求对网店营业执照信息公示如下：
+        </div>
+        <img id="pers" src="images/pers.jpg" alt="">
+        <div class="per-btn"></div>
+    </div>
+</div>
+</body>
+</html>

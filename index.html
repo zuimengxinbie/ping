@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>店铺详情</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/reset.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/vue.min.js"></script>
+</head>
+<style>
+    body{
+        background: #F5F5F5;
+    }
+    header {
+        height: 0.96rem;
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        overflow: hidden;
+    }
+    .icon-ret {
+        background: url(images/btn_back.png?lv=09b14befba) no-repeat;
+        width: 0.4rem;
+        height: 0.4rem;
+        background-size: 100%;
+        float: left;
+        margin-top: 0.28rem;
+        margin-left: 0.2rem;
+    }
+    .hd-title{
+        float: left;
+        font-size: 0.32rem;
+        font-weight:500;
+        color:rgba(53,53,53,1);
+        margin-top: 0.26rem;
+        margin-left: 2.6rem;
+    }
+    .c-title{
+        margin-top:0.96rem;
+        width: 100%;
+        height: 0.60rem;
+        background: #F5F5F5;
+        padding-left: 0.34rem;
+        align-content: center;
+        line-height: 0.60rem;
+        font-size:0.26rem;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(102,102,102,1);
+    }
+    .c-main{
+        width:100%;
+        height: auto;
+        background: #ffffff;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .mes{
+        width: 7.12rem;
+        height: 1.0rem;
+        margin-left: 0.38rem;
+        display: flex;
+        box-sizing: border-box;
+        padding-right: 0.30rem;
+        border-bottom: 0.01rem solid #E6E6E6;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .m-last{
+        width: 7.50rem;
+        height: 1.2rem;
+        border-bottom: 0.20rem solid #F5F5F5;
+        margin-left: 0;
+        padding-left: 0.38rem;
+    }
+    .m-laster{
+        border-bottom: none;
+    }
+    .m-title{
+        font-size:0.30rem;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(153,153,153,1);
+    }
+    .m-content{
+        font-size:0.30rem;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+    }
+    .m-per{
+        width: 0.8rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .p-imgone{
+        width: 0.46rem;
+        height: 0.46rem;
+        background: url("images/icon_gh_di@3x.png") no-repeat center;
+        background-size: 100%;
+    }
+    .p-imgtwo{
+        width: 0.13rem;
+        height: 0.24rem;
+        background: url("images/btn-right.png") no-repeat center;
+        background-size: 0.13rem 0.24rem;
+    }
+    .m-phone{
+        font-size: 0.24rem;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+    }
+</style>
+<body>
+<header class="hd">
+    <span class="icon-ret"></span>
+    <span class="hd-title">店铺信息</span>
+</header>
+<div id="con">
+    <div class="c-title">基础信息</div>
+    <div class="c-main">
+        <div class="mes">
+            <div class="m-title">店铺名称</div>
+            <div class="m-content">乐村淘官方体验店</div>
+        </div>
+        <div class="mes">
+            <div class="m-title">服务电话</div>
+            <div class="m-content m-phone">0571-28095359</div>
+        </div>
+        <div class="mes m-last">
+            <div class="m-title">所在地</div>
+            <div class="m-content">上海</div>
+        </div>
+        <div class="mes">
+            <div class="m-title">资质</div>
+            <div class="m-content">已签署消保协议</div>
+        </div>
+        <div class="mes">
+            <div class="m-title">企业资质</div>
+            <div class="m-per" @click="gopermit()">
+                <div class="p-imgone"></div>
+                <div class="p-imgtwo"></div>
+            </div>
+        </div>
+        <div class="mes m-laster">
+            <div class="m-title">开店时间</div>
+            <div class="m-content m-phone">2012-07-19-14:032:42</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    function jumpUrl(url){
+        window.location.href = url;
+    }
+    vm = new Vue({
+        el: '#con',
+        data:{
+
+        },
+        created: function () {
+
+        },
+        mounted: function() {
+
+        },
+        methods:{
+            gopermit:function () {
+                jumpUrl("permit.html");
+            }
+        }
+    });
+</script>
